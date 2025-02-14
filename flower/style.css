@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+#answer-title {
+  /* margin-top: 10px; */
+  font-size: 42px;
+  color: DeepPink;
+  text-shadow: 3px 0 10px rgba(255, 105, 180, 0.5);
+}
+.flower {
+  width: 50%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.pistil {
+  background-color: #efb31d;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  left: 375px;
+}
+.petal {
+  background-color: #e2e2e0;
+  width: 200px;
+  height: 200px;
+  border-radius: 100% 9% 100% 0% / 100% 10% 90% 0%;
+  position: absolute;
+  cursor: pointer;
+}
+.first {
+  top: 150px;
+  left: 500px;
+  background-color: #d6d6d6;
+}
+.second {
+  top: 150px;
+  transform: rotate(270deg);
+  left: 250px;
+  background-color: #d6d6d6;
+}
+.third {
+  top: 125px;
+  left: 375px;
+  transform: rotate(315deg);
+}
+.fourth {
+  top: 275px;
+  left: 200px;
+  transform: rotate(225deg);
+}
+.fiveth {
+  top: 275px;
+  left: 540px;
+  transform: rotate(45deg);
+}
+.sixth {
+  left: 485px;
+  top: 400px;
+  transform: rotate(90deg);
+  background-color: #d6d6d6;
+}
+.seventh {
+  left: 275px;
+  top: 400px;
+  transform: rotate(180deg);
+  background-color: #d6d6d6;
+}
+.stem {
+  position: absolute;
+  background-color: #3f9b0b;
+  width: 25px;
+  height: 400px;
+  top: 500px;
+  left: 465px;
+}
+.leaf {
+  background-color: #3f9b0b;
+  top: 650px;
+  left: 485px;
+  cursor: default;
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.anima {
+  animation: fade 0.5s forwards;
+}
